@@ -61,7 +61,6 @@ hr {
 .full-width-element {
     width: 100%;
     height: auto;
-    max-width: 900px;
 }
 
 /* Header Styles ----------------------------------*/
@@ -293,7 +292,7 @@ button[type="submit"]:active {
 footer {
     background-color: var(--color-dark-brown);
     color: var(--color-light-brown);
-    padding-top:1rem;
+    padding-top: 1rem;
 }
 
 footer p {
