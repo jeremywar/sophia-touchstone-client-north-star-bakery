@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>North Star Bakery - Contact Us</title>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-main-content">Skip to main content</a>
+    <header>
+        <a href="index.html" class="logo"><img src="images/bakery-logo_c.png" alt="north star bakery logo" width="200"
+                height="171"></a>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section>Custom cakes — please call 48 hours ahead</section>
+        <article>
+            <h1>Contact Us or Place an Order</h1>
+            <img src="images/bakery-bread_c.png" alt="various loaves of fresh baked bread" width="320" height="320">
+            <p>Have a question, planning an event, or craving something special? Call us, send a message using the form
+                below, or stop
+                by the bakery. For custom cakes and large orders, reach out ahead of time so we can make everything just
+                right.</p>
+        </article>
+        <Section>
+            <form action="/contact.html" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" size="30" placeholder="Enter your full name"
+                        pattern="[A-Za-z .\-]+" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email_address" size="30" placeholder="Enter your email address"
+                        required>
+                </fieldset>
+                <fieldset class="radio-group">
+                    <legend>Request Type</legend>
+                    <label class="radio-option">Preorder:
+                        <input type="radio" name="request_type" value="preorder" required>
+                    </label>
+                    <label class="radio-option">General Question:
+                        <input type="radio" name="request_type" value="general_question" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Request Details</legend>
+                    <label for="request_details">Question or Order Details:</label>
+                    <textarea id="request_details" name="request_details" required rows="4" cols="50"
+                        placeholder="Enter your question or order details here..."></textarea><br>
+                    <label for="allergy_notes">Allergy Notes (if applicable):</label>
+                    <input type="text" id="allergy_notes" name="allergy_notes" size="50"
+                        placeholder="Allergy notes (if applicable)"><br>
+                    <label for="pickup_date">Pickup Date (if applicable):</label>
+                    <input type="date" id="pickup_date" name="pickup_date">
+                </fieldset>
+                <button type="submit">Submit Request</button>
+            </form>
+        </Section>
+    </main>
+    <footer>
+        <section>
+            <p>
+                <strong>Location:</strong><br>
+                123 Main Street<br>
+                Somewhere, PA 12445
+            </p>
+            <p>
+                <strong>Hours:</strong><br>
+                Monday - Friday: 8am - 5pm
+            </p>
+            <p class="copyright">&copy; 2026 North Star Bakery</p>
+        </section>
+    </footer>
+</body>
+
+</html>
