@@ -11,6 +11,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* background-color: var(--color-light-brown); */
     margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
 }
 
 h1,
@@ -61,6 +64,10 @@ hr {
 .full-width-element {
     width: 100%;
     height: auto;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Header Styles ----------------------------------*/
@@ -286,6 +293,12 @@ button[type="submit"]:hover {
 button[type="submit"]:active {
     background-color: var(--color-teal-dark);
     outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: .9rem;
+    padding-top: .3rem;
 }
 
 /* Footer Styles ----------------------------------*/
